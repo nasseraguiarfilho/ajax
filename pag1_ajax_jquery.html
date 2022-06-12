@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Página 1</title>
+
+    <!-- bootstrap - link cdn -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <h3>Requisições síncronas e assíncronas</h3>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 center"></div>
+        <div class="col-md-4 center">
+          <a href="#" class="btn btn-primary ajaxDataForTestOnly" id="pagina_1"
+            >Página 1</a
+          >
+          <a href="#" class="btn btn-primary ajaxDataForTestOnly" id="pagina_2"
+            >Página 2</a
+          >
+          <a href="#" class="btn btn-primary ajaxDataForTestOnly" id="pagina_3"
+            >Página 3</a
+          >
+        </div>
+        <div class="col-md-4 center"></div>
+      </div>
+
+      <br />
+      <div class="row">
+        <div class="col-md-1"></div>
+
+        <div class="col-md-10">
+            <div class="panel-body" id="dataDisplay">
+              <img
+                src="loader.gif"
+                alt="loader"
+                srcset=""
+                style="display: none"
+                id="loader"
+              />
+              <!-- data will be loaded here via ajax with jquery -->
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-1"></div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="ajax.js"></script>
+  </body>
+</html>
